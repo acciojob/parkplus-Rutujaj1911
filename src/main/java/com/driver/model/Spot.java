@@ -70,6 +70,14 @@ public class Spot {
         this.occupied = occupied;
     }
 
+    public List<Reservation> getReservationList() {
+        return reservationList;
+    }
+
+    public void setReservationList(List<Reservation> reservationList) {
+        this.reservationList = reservationList;
+    }
+
     @ManyToOne
     @JoinColumn
     private ParkingLot parkingLot;
