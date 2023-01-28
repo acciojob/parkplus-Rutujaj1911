@@ -59,4 +59,7 @@ public class Payment {
     public void setReservation(Reservation reservation) {
         this.reservation = reservation;
     }
+
+    public void getReservation(Integer reservationId) {
+    }
 }

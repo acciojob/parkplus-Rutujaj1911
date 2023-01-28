@@ -22,7 +22,18 @@ public class PaymentServiceImpl implements PaymentService {
         //If the mode contains a string other than "cash", "card", or "upi" (any character in uppercase or lowercase), throw "Payment mode not detected" exception.
         //Note that the reservationId always exists
         Payment payment=new Payment();
-
+        payment.getReservation(reservationId);
+        payment.setPaymentMode(PaymentMode.CARD);
+        int bill=0;
+        if(amountSent<bill){
+            throw new Exception("Insufficient Amount");
+        }
+        PaymentMode pay = null;
+        if(pay!=PaymentMode.CARD && pay!=PaymentMode.CASH && pay!=PaymentMode.UPI) {
+            throw new Exception("Payment mode not detected");
+        }
+        paymentRepository2.save(payment);
+        return payment;
 
 
     }

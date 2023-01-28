@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ParkingLotRepository extends JpaRepository<ParkingLot, Integer>{
-  ParkingLot save(String name,String address);
+  ParkingLot save(String name, String address);
 }
