@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer>{
-    User save(String name, String phoneNumber, String password);
+    User saveAll(String name, String phoneNumber, String password);
 }
