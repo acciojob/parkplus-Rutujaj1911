@@ -56,6 +56,6 @@ public class ParkingLot {
         this.spotList = spotList;
     }
 
-    public void setSpot(Spot spot) {
+    public void setSpot() {
     }
 }

@@ -9,6 +9,9 @@ import com.driver.services.ReservationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Service
 public class ReservationServiceImpl implements ReservationService {
     @Autowired
@@ -28,6 +31,10 @@ public class ReservationServiceImpl implements ReservationService {
        Spot spot=null;
        spotRepository3.save(parkingLotId);
        return reservation;
+//       Spot spot=new Spot(userId,parkingLotId,timeInHours,numberOfWheels);
+//       spot.setParkingLot(parkingLotId);
+
+
 
 
 

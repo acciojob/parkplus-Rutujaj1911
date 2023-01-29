@@ -18,7 +18,7 @@ public class Spot {
     private boolean occupied;
 
 
-    public Spot(){
+    public Spot(Integer userId, Integer parkingLotId, Integer timeInHours, Integer numberOfWheels){
 
     }
 
@@ -28,6 +28,9 @@ public class Spot {
         this.occupied=occupied;
         this.spotType=spotType;
 
+    }
+
+    public Spot(int parkingLotId, Integer numberOfWheels, Integer pricePerHour) {
     }
 
     public ParkingLot getParkingLot() {
