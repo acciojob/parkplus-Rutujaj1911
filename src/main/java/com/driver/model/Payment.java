@@ -36,11 +36,11 @@ public class Payment {
         this.id = id;
     }
 
-    public Boolean getPaymentCompleted() {
+    public boolean getPaymentCompleted() {
         return paymentCompleted;
     }
 
-    public void setPaymentCompleted(Boolean paymentCompleted) {
+    public void setPaymentCompleted(boolean paymentCompleted) {
         this.paymentCompleted = paymentCompleted;
     }
 
