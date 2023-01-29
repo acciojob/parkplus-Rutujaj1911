@@ -18,9 +18,6 @@ public class Spot {
     private boolean occupied;
 
 
-    public Spot(Integer userId, Integer parkingLotId, Integer timeInHours, Integer numberOfWheels){
-
-    }
 
     public Spot(int id,int pricePerHour,Boolean occupied,SpotType spotType){
         this.id=id;
