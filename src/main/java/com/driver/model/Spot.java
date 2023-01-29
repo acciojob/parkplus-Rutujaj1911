@@ -26,8 +26,7 @@ public class Spot {
         this.spotType=spotType;
     }
 
-    public Spot(int parkingLotId, Integer numberOfWheels, Integer pricePerHour) {
-    }
+
 
 
     public ParkingLot getParkingLot() {
