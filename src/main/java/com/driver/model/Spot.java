@@ -15,7 +15,7 @@ public class Spot {
 
     private int pricePerHour;
 
-    private Boolean occupied;
+    private boolean occupied;
 
 
     public Spot(){

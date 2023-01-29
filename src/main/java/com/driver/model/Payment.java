@@ -10,7 +10,7 @@ public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    private Boolean paymentCompleted;
+    private boolean paymentCompleted;
     @Enumerated(value = EnumType.STRING)
     private PaymentMode paymentMode;
 
