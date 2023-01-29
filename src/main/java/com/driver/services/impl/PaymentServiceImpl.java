@@ -23,15 +23,13 @@ public class PaymentServiceImpl implements PaymentService {
         //Note that the reservationId always exists
         Payment payment=new Payment();
         payment.getReservation(reservationId);
-        payment.setPaymentMode(PaymentMode.CARD);
-
-//        if(amountSent<payment){
+        //        if(amountSent<payment){
 //            throw new Exception("Insufficient Amount");
 //        }
-        PaymentMode pay = null;
-        if(pay!=PaymentMode.CARD && pay!=PaymentMode.CASH && pay!=PaymentMode.UPI) {
-            throw new Exception("Payment mode not detected");
-        }
+//        PaymentMode pay = null;
+//        if(pay!=PaymentMode.CARD && pay!=PaymentMode.CASH && pay!=PaymentMode.UPI) {
+//            throw new Exception("Payment mode not detected");
+//        }
         paymentRepository2.save(payment);
         return payment;
 
