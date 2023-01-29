@@ -55,14 +55,14 @@ public class ParkingLotServiceImpl implements ParkingLotService {
 
     @Override
     public Spot updateSpot(int parkingLotId, int spotId, int pricePerHour) {
-//        Spot spot=spotRepository1.findById(spotId).get();
-//        ParkingLot parkingLot=parkingLotRepository1.findById(parkingLotId).get();
-//
-//        parkingLot.getSpotList().remove(spot);
-//        spot.setPricePerHour(pricePerHour);
-//        parkingLot.getSpotList().add(spot);
+        Spot spot=spotRepository1.findById(spotId).get();
+        ParkingLot parkingLot=parkingLotRepository1.findById(parkingLotId).get();
 
-        Spot spot=spotRepository1.save(parkingLotId,spotId,pricePerHour);
+        parkingLot.getSpotList().remove(spot);
+        spot.setPricePerHour(pricePerHour);
+        parkingLot.getSpotList().add(spot);
+
+//        Spot spot=spotRepository1.save(parkingLotId,spotId,pricePerHour);
         return spot;
     }
 
