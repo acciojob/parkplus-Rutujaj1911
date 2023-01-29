@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface SpotRepository extends JpaRepository<Spot, Integer>{
-//   Spot save(int parkingLotId, Integer numberOfWheels, Integer pricePerHour);
+   Spot save(int parkingLotId, Integer numberOfWheels, Integer pricePerHour);
    Spot save(int parkingLotId);
 }
