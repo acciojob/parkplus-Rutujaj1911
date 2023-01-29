@@ -25,7 +25,9 @@ public class Spot {
         this.occupied=occupied;
         this.spotType=spotType;
     }
+    public Spot(){
 
+    }
 
 
 
