@@ -3,6 +3,7 @@ package com.driver.model;
 import jdk.dynalink.linker.LinkerServices;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -31,7 +32,7 @@ public class Reservation {
     private User user;
 
     @OneToOne(mappedBy = "reservation",cascade = CascadeType.ALL)
-    List<Payment> paymentList;
+    List<Payment> paymentList=new ArrayList<>();
 
     public int getId() {
         return id;
